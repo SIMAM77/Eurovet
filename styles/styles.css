@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+*{
+	padding:0;
+	margin:0;
+}
+
+/*--------------------------------------
+
+PARAMETRES GENERAUX
+
+------------------------------------*/
+
+body{
+	display: block;
+	max-width:1400px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+/*--------------------------------------
+
+HEADER
+
+------------------------------------*/
+
+header{
+	display:block;
+	height:320px;
+	background-image:url('../img-layout/illustration-header.jpg');
+	background-size: cover;
+	margin-left:auto;
+	margin-right:auto;
+	border-bottom:1px solid #b4966e;
+
+
+}
+
+.logo{
+	display: block;
+	float:left;
+	margin-top:110.5px;
+
+}
+
+/*--------------------------------------
+
+NAVIGATION
+
+------------------------------------*/
+
+
+.nav1{
+	border-bottom:1px solid #b4966e;
+	margin-top: 20px;
+	padding-bottom: 50px;
+	font-size:15px;
+}
+
+.home {
+	display:block;
+	float:left;
+}
+
+
+.menu li{
+	display:block;
+	float:left;
+	margin-top:5px;
+	margin-left: 20px;
+
+}
+
+.menu li:hover{
+	color:#b4966e;
+
+}
+
+.arborescence{
+	margin-top:50px;
+}
+
+.arborescence a{
+	text-decoration:none;
+	font-size:15px;
+	color:#d2d8de;
+}
+
+.arborescence a:active{
+	color:#505a64;
+}
+
+/*--------------------------------------
+
+TITRAGE DE SECTION
+
+------------------------------------*/
+
+.titre{
+	display: block;
+	width: 33%;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+.titre h2{
+	font-family: 'PT Serif', serif;
+	font-size:36px;
+}
+
+.titre h3{
+	font-size:20px;
+	color:#d2d8de;
+}
+
+.titre img{
+	vertical-align: middle;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+/*--------------------------------------
+
+CONTENUS
+
+------------------------------------*/
+
+.container{
+	display: block;
+	width:90%;
+	margin-bottom: 50px;
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+
+article {
+	display:block;
+	float:left;
+	min-width:32%;
+	max-height: 297.09px;
+	margin-top: 10px;
+	margin-left: 1%;
+
+}
+
+article:nth-child(8n+4)  {
+	display:block;
+	float:left;
+	min-width:32%;
+	margin-top: 10px;
+	margin-left: 1%;
+	background:#505a64;
+}
+
+article:nth-child(8n+4) .illustration{
+	display:block;
+	float:left;
+	min-width:32%;
+	margin-top: 10px;
+	margin-left: 1%;
+	opacity: 0;
+}
+
+article:nth-child(6n+3){
+	display:block;
+	float:left;
+	min-width:32%;
+	margin-top: 10px;
+	margin-left: 1%;
+	background:#b4966e;
+	
+}
+
+article:nth-child(6n+3) .illustration {
+	display:block;
+	float:left;
+	min-width:32%;
+	margin-top: 10px;
+	margin-left: 1%;
+	background:red;
+	opacity: 0;
+}
+
+
+figure{
+	width:100%;
+	position:relative;
+}
+
+figcaption{
+	position:absolute;
+	margin-left: 2%;
+	top: 210px;
+	font-size:24px;
+	color:white;
+}
+
+.illustration{
+	width:100%;
+}
+
+.bouton{
+	display: block;
+	float:right;
+	margin-top: 20px;
+	background-color: #505a64;
+}
+
+.bouton p{
+	padding:15px;
+	color:white;
+}
+
+/*--------------------------------------
+
+FOOTER
+
+------------------------------------*/
+
+footer{
+	display:block;
+	background:#32323c;
+	height:55px;
+}
+
+.nav2{
+	display:block;
+	width:50%;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.nav2 ul{
+	display:block;
+	height:55px;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+
+
+}
+
+.nav2 li{
+	display:inline-block;
+	margin-top: 10px;
+	margin-left: 2%;
+	margin-right: 2%;
+	color:white;
+}
+
+.nav2 img{
+	margin-right: 30px;
+}
